@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div class="container-fluid container-backgraund">
+      <div class="container">
+
+
+        <ul class="nav">
+          <li class="nav-item">
+            <%= link_to 'Instaphoto', root_path, class: 'nav-lending' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'О проекте', pages_about_path, class: 'nav-lending' %>
+          </li>
+        </ul>
+        <%= yield %>
+
+
+      </div>
+    </div>
+
+
+  
+  </body>
+</html>

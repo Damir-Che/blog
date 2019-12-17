@@ -1,0 +1,14 @@
+<h1>Комментарии</h1>
+<%= form_for @comment do |f| %>
+
+  <div class="form-control">
+    <%= f.label :body %> <br>
+    <%= f.text_field :body %>
+  </div>
+  <br>
+
+  <div class="form-control">
+    <%= f.submit 'Сохранить' %>
+  </div>
+
+<% end %>

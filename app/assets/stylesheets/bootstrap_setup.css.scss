@@ -1,0 +1,33 @@
+
+@import "bootstrap";
+
+.container-backgraund{
+  width: 100%;
+  height: 100vh;
+  background-size: cover; //что бы уместилась на весь экран с сохронением пропорции
+  background-image: url(image_path('background.jpg'));
+}
+
+.jumbotron-lending{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+//дя активной ссылки
+.nav-lending:link,
+.nav-lending:visited{
+  color: #3498DB;
+}
+//наведение курсора
+.nav-lending:hover,
+.nav-lending:active{
+  color: #59ABE3;
+  text-decoration: none;
+}
+
+//.sss{
+//  margin-left: 30%;
+//  background: #fff;
+//  bac
+//}
